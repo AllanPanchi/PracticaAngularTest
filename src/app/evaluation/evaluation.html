@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Evaluación Segundo Parcial</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" [(ngModel)]="nota1" name="nota1">
+        </div>
+
+        <div class="form-group">
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" [(ngModel)]="nota2" name="nota2">
+        </div>
+
+        <div class="form-group">
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" [(ngModel)]="comentarios" name="comentarios"></textarea>
+        </div>
+
+        <button type="button" (click)="dado()">Lanzar Dado</button>
+    </form>
+</div>
